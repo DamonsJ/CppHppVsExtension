@@ -9,6 +9,7 @@
   "categories": [
     "Other"
   ],
+  "icon":"assets/icons/cpp.png",
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
