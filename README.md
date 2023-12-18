@@ -43,6 +43,12 @@ reference:
 ### 0.0.3
 
 change feature image
+
+### 0.0.4
+
+change minimum support version
+
+
 ---
 
 ## Following extension guidelines
