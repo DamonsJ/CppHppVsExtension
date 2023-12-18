@@ -2,10 +2,10 @@
   "name": "cpphpp",
   "displayName": "CppHpp",
   "description": "create hpp and cpp at one time",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "CppHpp",
   "engines": {
-    "vscode": "^1.85.0"
+    "vscode": "^1.60.0"
   },
   "categories": [
     "Other"
