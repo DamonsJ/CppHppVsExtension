@@ -2,7 +2,8 @@
   "name": "cpphpp",
   "displayName": "CppHpp",
   "description": "create hpp and cpp at one time",
-  "version": "0.0.1",
+  "version": "0.0.3",
+  "publisher": "CppHpp",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -10,6 +11,10 @@
     "Other"
   ],
   "icon":"assets/icons/cpp.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DamonsJ/CppHppVsExtension.git"
+  },
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
