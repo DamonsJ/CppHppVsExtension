@@ -35,7 +35,7 @@ export function activate(context: vscode.ExtensionContext) {
 					fs.createWriteStream(hppfile).close();
 				}
 				var uppername = fileName.toUpperCase()
-				const cpp_content = 'namespace { \n\n #include \"' + fileName + '.hpp\"\n\n} //namespace \n';
+				const cpp_content = '#include \"' + fileName + '.hpp\"\n\n namespace { \n\n} //namespace \n';
 				let hpp_content = `#ifndef __${uppername}_HPP__\n#define __${uppername}_HPP__\n\n#include <iostream>\n\n/**\n * @brief ${fileName}\n *\n */\n\nnamespace {\n\nclass ${fileName} {\npublic:\n  ${fileName}();\n  // rule of five\n  ~${fileName}() = default; // destructor (virtual if ${fileName} is meant to be a base class)\n  ${fileName}(const ${fileName} &) = default;            // copy constructor\n  ${fileName} &operator=(const ${fileName} &) = default; // copy assignment\n  ${fileName}(${fileName} &&) noexcept = default; // move constructor\n  ${fileName} &operator=(${fileName} &&) noexcept = default; // move assignment\n};\n\n} // namespace\n\n#endif\n`;
 
 				const writeData = Buffer.from(cpp_content, 'utf8');
